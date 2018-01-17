@@ -13,7 +13,7 @@ app.get('/categories', (req, res) => {
 })
 
 app.get('/users', (req, res) => {
-  db.any('SELECT * from user').then(data => res.send(data))
+  db.any('SELECT * from "user"').then(data => res.send(data))
 })
 
 app.listen(3000, () => console.log('Photobomb server listening on Port 3000'))
